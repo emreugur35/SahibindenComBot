@@ -1,12 +1,12 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "aydinozturk/SahibindenComBot",
+  "description": "Sahibinden.com'da bulunan mağazanızın ilanlarını çekebileceğiniz bir bot uygulaması.",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "author's name",
-      "email": "email@example.com"
+      "name": "Aydın Öztürk",
+      "email": "ben@aydinn.com"
     }
   ],
   "require": {
