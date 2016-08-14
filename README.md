@@ -2,7 +2,7 @@
 Sahibinden.com'da bulunan mağazanızın ilanlarını çekebileceğiniz bir bot uygulaması.
 
 #Kurulum
-composer require aydinozturk/sahibinden-com-bot
+<code>composer require aydinozturk/sahibinden-com-bot</code>
 
 Uygulama için mysql veritabanı gerekmektedir.
 
