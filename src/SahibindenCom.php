@@ -6,13 +6,17 @@
  * Time: 20:40
  */
 class SahibindenCom{
-    private $Curl,$MagazaAdi;
+    private $Curl,$MagazaAdi,$MysqlServer,$MysqlUser,$MysqlPass,$MysqlDb;
 
-    public function __construct($MagazaAdi){
+    public function __construct($MagazaAdi,$MysqlServer='localhost',$MysqlUser='root',$MysqlPass='root',$MysqlDb='sahibindenbot'){
         $this->MagazaAdi=$MagazaAdi;
+        $this->MysqlServer=$MysqlServer;
+        $this->MysqlUser=$MysqlUser;
+        $this->MysqlPass=$MysqlPass;
+        $this->MysqlDb=$MysqlDb;
         $this->Curl=new Curl();
-        $db=mysql_connect('VeritabaniSunucusu','KullanıcıAdı','Parola');
-        mysql_select_db('VeritabanıAdı',$db);
+        $db=mysql_connect($MysqlServer,$MysqlUser,$MysqlPass);
+        mysql_select_db($MysqlDb,$db);
         mysql_query("SET NAMES utf8");
         mysql_query("SET CHARACTER SET utf8");
         mysql_query("SET COLLATION_CONNECTION = 'utf8_general_ci'");
